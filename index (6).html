@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Dr. Atmaram Pandurang Samant — PhD Horticulturist specialising in Alphonso, Kesar & Konkan mango orchard management. Expert consultations, fertigation planning, and AI-powered farm advice."/>
+<meta name="keywords" content="mango consultant, Konkan horticulturist, Alphonso mango, fertigation, orchard management, Dapoli, Maharashtra"/>
+<meta property="og:title" content="Dr. Atmaram Pandurang Samant | Mango & Fruit Orchard Consultant"/>
+<meta property="og:description" content="PhD-qualified horticulturist from Dapoli. Expert mango orchard guidance for Konkan farmers."/>
+<meta property="og:type" content="website"/>
+<title>Dr. Atmaram Pandurang Samant | Mango & Fruit Orchard Consultant · Dapoli</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>"/>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --green-deep:  #163322;
+  --green-mid:   #1f4d33;
+  --green-light: #2d6645;
+  --green-pale:  #e8f2ec;
+  --gold:        #d4890a;
+  --gold-light:  #f0a820;
+  --gold-pale:   #fdf3e0;
+  --cream:       #f8f4ed;
+  --brown:       #4a2e14;
+  --text:        #1a1a18;
+  --text-mid:    #4a4a42;
+  --text-muted:  #7a7a6e;
+  --white:       #ffffff;
+  --border:      rgba(26,51,34,0.12);
+  --wa:          #25d366;
+  --wa-dark:     #128C7E;
+  --radius:      12px;
+  --radius-lg:   20px;
+  --shadow:      0 4px 24px rgba(22,51,34,0.10);
+  --shadow-lg:   0 12px 48px rgba(22,51,34,0.15);
+}
+
+/* ── CONFIG: Replace these two values ── */
+/* WA_NUMBER in the <script> at the bottom */
+/* YOUR_CALENDLY in the Calendly links    */
+
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text); overflow-x: hidden; }
+h1,h2,h3,h4 { font-family: 'Lora', serif; }
+a { text-decoration: none; }
+
+/* ── NAV ── */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(22,51,34,0.97); backdrop-filter: blur(10px);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5%; height: 68px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.nav-logo { display: flex; align-items: center; gap: 10px; }
+.nav-logo-icon { width: 36px; height: 36px; background: var(--gold); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+.nav-logo-text .name { font-family: 'Lora', serif; font-size: 15px; font-weight: 600; color: var(--white); display: block; }
+.nav-logo-text .sub  { font-size: 11px; color: rgba(255,255,255,0.5); letter-spacing: 0.06em; text-transform: uppercase; }
+.nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+.nav-links a { color: rgba(255,255,255,0.72); font-size: 14px; transition: color 0.2s; }
+.nav-links a:hover { color: var(--white); }
+.nav-cta { background: var(--gold); color: var(--brown); border: none; padding: 9px 22px; border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 13.5px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+.nav-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+/* ── HERO ── */
+.hero { position: relative; overflow: hidden; min-height: 92vh; display: flex; align-items: center; background: var(--green-deep); }
+.hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 60% 70% at 70% 50%, rgba(45,102,69,0.55) 0%, transparent 70%), radial-gradient(ellipse 40% 60% at 10% 80%, rgba(212,137,10,0.12) 0%, transparent 60%); }
+.hero-pattern { position: absolute; inset: 0; opacity: 0.04; background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 Q45 20 30 40 Q15 20 30 5Z' fill='%23ffffff'/%3E%3C/svg%3E"); background-size: 60px 60px; }
+.hero-content { position: relative; z-index: 2; padding: 0 5%; max-width: 1200px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1fr 420px; gap: 80px; align-items: center; }
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(212,137,10,0.15); border: 1px solid rgba(212,137,10,0.3); color: var(--gold-light); padding: 6px 14px; border-radius: 100px; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 24px; }
+.hero-badge::before { content: '●'; font-size: 8px; }
+.hero h1 { font-size: clamp(36px, 5vw, 58px); font-weight: 700; color: var(--white); line-height: 1.12; letter-spacing: -0.02em; margin-bottom: 22px; }
+.hero h1 em { font-style: italic; color: var(--gold-light); }
+.hero-desc { color: rgba(255,255,255,0.65); font-size: 17px; line-height: 1.7; max-width: 520px; margin-bottom: 40px; }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn-primary { background: var(--gold); color: var(--brown); border: none; padding: 15px 30px; border-radius: var(--radius); font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.2s; display: inline-block; }
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(212,137,10,0.35); }
+.btn-secondary { background: rgba(255,255,255,0.08); color: var(--white); border: 1px solid rgba(255,255,255,0.2); padding: 15px 30px; border-radius: var(--radius); font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 500; cursor: pointer; transition: all 0.2s; display: inline-block; }
+.btn-secondary:hover { background: rgba(255,255,255,0.14); }
+.hero-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-lg); padding: 28px; backdrop-filter: blur(8px); }
+.hero-card-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.4); margin-bottom: 16px; }
+.hero-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+.hero-stat { background: rgba(255,255,255,0.06); border-radius: 10px; padding: 16px; text-align: center; }
+.hero-stat .num { font-family: 'Lora', serif; font-size: 30px; font-weight: 700; color: var(--gold-light); display: block; }
+.hero-stat .lab { font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 4px; }
+.hero-divider { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 0 0 20px; }
+.hero-mini-chat { background: rgba(0,0,0,0.2); border-radius: 10px; padding: 14px; }
+.chat-bubble-user { background: rgba(212,137,10,0.2); border-radius: 8px 8px 2px 8px; padding: 10px 12px; font-size: 12.5px; color: rgba(255,255,255,0.8); margin-bottom: 8px; }
+.chat-bubble-ai { background: rgba(45,102,69,0.4); border-radius: 8px 8px 8px 2px; padding: 10px 12px; font-size: 12.5px; color: rgba(255,255,255,0.85); }
+.chat-label { font-size: 10px; color: rgba(255,255,255,0.4); margin-bottom: 4px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; }
+
+/* ── CREDENTIALS STRIP ── */
+.creds { background: var(--white); border-bottom: 1px solid var(--border); padding: 24px 5%; }
+.creds-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+.cred-item { display: flex; align-items: center; gap: 10px; }
+.cred-icon { width: 38px; height: 38px; border-radius: 8px; background: var(--green-pale); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+.cred-text .cred-main { font-size: 13.5px; font-weight: 600; color: var(--text); }
+.cred-text .cred-sub  { font-size: 11.5px; color: var(--text-muted); }
+.cred-sep { width: 1px; height: 40px; background: var(--border); flex-shrink: 0; }
+
+/* ── COMMON SECTION ── */
+section { padding: 90px 5%; }
+.section-inner { max-width: 1200px; margin: 0 auto; }
+.section-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--green-light); font-weight: 600; margin-bottom: 12px; }
+.section-title { font-family: 'Lora', serif; font-size: clamp(28px, 3.5vw, 42px); font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 16px; }
+.section-title em { font-style: italic; color: var(--green-light); }
+.section-desc { font-size: 16px; color: var(--text-mid); line-height: 1.7; max-width: 560px; }
+
+/* ── SERVICES ── */
+.services-section { background: var(--cream); }
+.services-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 56px; gap: 24px; }
+.services-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+.service-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 32px; transition: all 0.25s; position: relative; overflow: hidden; }
+.service-card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background: var(--green-light); transform:scaleX(0); transform-origin:left; transition:transform 0.3s; }
+.service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.service-card:hover::before { transform: scaleX(1); }
+.service-icon { font-size: 32px; margin-bottom: 20px; display: block; }
+.service-card h3 { font-size: 20px; font-weight: 600; color: var(--text); margin-bottom: 12px; line-height: 1.3; }
+.service-card p { font-size: 14.5px; color: var(--text-mid); line-height: 1.65; margin-bottom: 24px; }
+.service-price { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border); padding-top: 20px; }
+.price-tag { font-family: 'Lora', serif; font-size: 22px; font-weight: 700; color: var(--green-deep); }
+.price-tag span { font-family: 'DM Sans', sans-serif; font-size: 12px; color: var(--text-muted); font-weight: 400; }
+.service-book-btn { background: var(--green-pale); color: var(--green-deep); border: 1px solid rgba(31,77,51,0.15); padding: 8px 18px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s; display: inline-block; }
+.service-book-btn:hover { background: var(--green-light); color: var(--white); }
+.service-card.featured { background: var(--green-deep); border-color: var(--green-deep); }
+.service-card.featured h3 { color: var(--white); }
+.service-card.featured p { color: rgba(255,255,255,0.65); }
+.service-card.featured .service-price { border-top-color: rgba(255,255,255,0.1); }
+.service-card.featured .price-tag { color: var(--gold-light); }
+.service-card.featured .price-tag span { color: rgba(255,255,255,0.45); }
+.service-card.featured .service-book-btn { background: var(--gold); color: var(--brown); border-color: transparent; }
+.service-card.featured .service-book-btn:hover { background: var(--gold-light); }
+.service-card.featured::before { background: var(--gold); }
+.featured-badge { position:absolute; top:20px; right:20px; background:var(--gold); color:var(--brown); font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; padding:4px 10px; border-radius:100px; }
+
+/* ── AI ADVISOR ── */
+.ai-section { background: var(--green-deep); position: relative; overflow: hidden; }
+.ai-section::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 50% 80% at 80% 50%,rgba(45,102,69,0.6) 0%,transparent 70%); }
+.ai-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 520px; gap: 80px; align-items: center; }
+.ai-left .section-label { color: var(--gold-light); }
+.ai-left .section-title { color: var(--white); }
+.ai-left .section-desc { color: rgba(255,255,255,0.62); max-width: 440px; margin-bottom: 36px; }
+.ai-features { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px; }
+.ai-features li { display: flex; align-items: flex-start; gap: 12px; color: rgba(255,255,255,0.8); font-size: 15px; }
+.ai-features li::before { content:'✓'; background:rgba(212,137,10,0.2); color:var(--gold-light); width:22px; height:22px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; flex-shrink:0; margin-top:1px; }
+.ai-chat-demo { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-lg); padding: 24px; }
+.ai-chat-header { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.ai-avatar { width: 36px; height: 36px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+.ai-chat-header .hname { font-size: 14px; font-weight: 600; color: var(--white); }
+.ai-chat-header .hstatus { font-size: 12px; color: rgba(255,255,255,0.45); }
+.online-dot { display: inline-block; width: 7px; height: 7px; background: #4ade80; border-radius: 50%; margin-right: 4px; }
+.chat-msgs { display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px; }
+.msg { padding: 11px 14px; border-radius: 12px; font-size: 13.5px; line-height: 1.55; max-width: 90%; }
+.msg.user { background: rgba(212,137,10,0.18); color: rgba(255,255,255,0.85); align-self: flex-end; border-radius: 12px 12px 2px 12px; }
+.msg.ai   { background: rgba(45,102,69,0.45); color: rgba(255,255,255,0.88); align-self: flex-start; border-radius: 12px 12px 12px 2px; }
+.msg-sender { font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
+.msg.user .msg-sender { color: rgba(212,137,10,0.7); text-align: right; }
+.msg.ai  .msg-sender  { color: rgba(255,255,255,0.35); }
+.chat-input-row { display: flex; gap: 10px; align-items: center; }
+.chat-input-fake { flex:1; background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:10px 14px; font-size:13px; color:rgba(255,255,255,0.35); font-family:'DM Sans',sans-serif; }
+.chat-send-btn { background:var(--gold); color:var(--brown); border:none; width:38px; height:38px; border-radius:8px; font-size:16px; cursor:pointer; transition:background 0.2s; }
+.chat-send-btn:hover { background:var(--gold-light); }
+
+/* ── SHOP ── */
+.shop-section { background: var(--white); }
+.shop-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 48px; }
+.shop-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+.shop-card { background: var(--cream); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: all 0.25s; }
+.shop-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.shop-thumb { height: 160px; display: flex; align-items: center; justify-content: center; font-size: 64px; }
+.shop-thumb-mango       { background: linear-gradient(135deg,#fdf3e0,#f9d980); }
+.shop-thumb-fertigation { background: linear-gradient(135deg,#e8f2ec,#b8dcc4); }
+.shop-thumb-calendar    { background: linear-gradient(135deg,#fdf3e0,#f2cca0); }
+.shop-card-body { padding: 20px 22px 22px; }
+.shop-type { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 8px; font-weight: 600; }
+.shop-card-body h3 { font-size: 17px; font-weight: 600; color: var(--text); margin-bottom: 8px; line-height: 1.35; }
+.shop-card-body p  { font-size: 13.5px; color: var(--text-mid); line-height: 1.6; margin-bottom: 18px; }
+.shop-footer { display: flex; align-items: center; justify-content: space-between; }
+.shop-price { font-family: 'Lora', serif; font-size: 20px; font-weight: 700; color: var(--green-deep); }
+.shop-buy-btn { background: var(--green-deep); color: var(--white); border: none; padding: 9px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s; display: inline-block; }
+.shop-buy-btn:hover { background: var(--green-mid); }
+
+/* ── ABOUT ── */
+.about-section { background: var(--gold-pale); }
+.about-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 360px 1fr; gap: 80px; align-items: center; }
+.about-photo { background: var(--green-pale); border-radius: var(--radius-lg); height: 400px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 12px; border: 2px dashed rgba(31,77,51,0.2); position: relative; overflow: hidden; }
+.about-photo-icon  { font-size: 72px; }
+.about-photo-label { font-size: 13px; color: var(--text-muted); font-style: italic; }
+.about-photo-badge { position:absolute; bottom:20px; left:20px; right:20px; background:var(--green-deep); color:var(--white); border-radius:10px; padding:14px 16px; text-align:center; }
+.about-photo-badge .award      { font-size:12px; color:var(--gold-light); font-weight:600; text-transform:uppercase; letter-spacing:0.06em; margin-bottom:4px; }
+.about-photo-badge .award-name { font-family:'Lora',serif; font-size:15px; color:var(--white); font-weight:600; }
+.about-bio { font-size: 16px; color: var(--text-mid); line-height: 1.75; margin-bottom: 28px; }
+.about-pills { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px; }
+.pill { background: var(--white); border: 1px solid var(--border); color: var(--text); font-size: 13px; padding: 7px 14px; border-radius: 100px; font-weight: 500; }
+.pill.green { background: var(--green-pale); border-color: rgba(31,77,51,0.15); color: var(--green-deep); }
+.about-cta { display: flex; gap: 14px; }
+.btn-outline { background: transparent; color: var(--green-deep); border: 2px solid var(--green-deep); padding: 13px 28px; border-radius: var(--radius); font-family: 'DM Sans', sans-serif; font-size: 14.5px; font-weight: 600; cursor: pointer; transition: all 0.2s; display: inline-block; }
+.btn-outline:hover { background: var(--green-deep); color: var(--white); }
+
+/* ── TESTIMONIALS ── */
+.testimonial-section { background: var(--cream); }
+.testi-header { text-align: center; margin-bottom: 56px; }
+.testimonial-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+.testi-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; }
+.testi-stars { color: var(--gold); font-size: 16px; margin-bottom: 14px; letter-spacing: 2px; }
+.testi-text { font-size: 15px; color: var(--text-mid); line-height: 1.7; margin-bottom: 20px; font-style: italic; }
+.testi-author { display: flex; align-items: center; gap: 10px; }
+.testi-avatar { width:38px; height:38px; border-radius:50%; background:var(--green-pale); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; color:var(--green-deep); flex-shrink:0; }
+.testi-name { font-size: 13.5px; font-weight: 600; color: var(--text); }
+.testi-loc  { font-size: 12px; color: var(--text-muted); }
+
+/* ── CONTACT SECTION ── */
+.contact-section { background: var(--cream); }
+.contact-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 520px; gap: 80px; align-items: start; }
+.contact-cards { display: flex; flex-direction: column; gap: 14px; margin-bottom: 24px; }
+.contact-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; display: flex; align-items: center; gap: 14px; transition: all 0.2s; }
+.contact-card:hover { transform: translateX(4px); box-shadow: var(--shadow); border-color: rgba(31,77,51,0.2); }
+.contact-card-icon { width:44px; height:44px; border-radius:10px; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:22px; }
+.icon-wa   { background: #e8faf0; }
+.icon-cal  { background: var(--green-pale); }
+.icon-mail { background: var(--gold-pale); }
+.contact-card-text .clabel { font-size: 13.5px; font-weight: 600; color: var(--text); }
+.contact-card-text .csub   { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.contact-card-arrow { margin-left: auto; font-size: 18px; color: var(--text-muted); transition: transform 0.2s; }
+.contact-card:hover .contact-card-arrow { transform: translateX(4px); color: var(--green-light); }
+.response-note { background: var(--green-pale); border-radius: var(--radius); padding: 14px 18px; display: flex; align-items: center; gap: 10px; }
+.response-dot { width:8px; height:8px; background:var(--wa); border-radius:50%; flex-shrink:0; animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.6;transform:scale(1.3)} }
+.response-note span { font-size: 13px; color: var(--green-deep); font-weight: 500; }
+
+/* Query form card */
+.query-form-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); overflow: hidden; }
+.form-header { background: var(--green-deep); padding: 22px 24px; display: flex; align-items: center; gap: 12px; }
+.form-header-avatar { width:42px; height:42px; background:var(--wa); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:22px; flex-shrink:0; }
+.form-header-text .fname { font-size: 14.5px; font-weight: 600; color: var(--white); }
+.form-header-text .fstatus { font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 2px; }
+.form-body { padding: 24px; }
+.form-flabel { font-size: 12px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; display: block; }
+.query-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+.chip { padding:8px 14px; border-radius:100px; font-size:13px; font-weight:500; border:1.5px solid var(--border); background:var(--white); color:var(--text-mid); cursor:pointer; transition:all 0.18s; white-space:nowrap; }
+.chip:hover  { border-color:var(--green-light); color:var(--green-deep); }
+.chip.active { background:var(--green-deep); color:var(--white); border-color:var(--green-deep); }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+.field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+.field label { font-size: 12px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.field input, .field textarea { border:1.5px solid var(--border); border-radius:8px; padding:11px 14px; font-family:'DM Sans',sans-serif; font-size:14px; color:var(--text); background:var(--white); transition:border-color 0.18s; outline:none; resize:none; }
+.field input:focus, .field textarea:focus { border-color:var(--green-light); box-shadow:0 0 0 3px rgba(45,102,69,0.08); }
+.field textarea { min-height: 88px; line-height: 1.55; }
+.preview-box { background:#f0faf4; border:1px solid rgba(37,211,102,0.2); border-radius:10px; padding:12px 14px; margin-bottom:18px; }
+.preview-box .preview-label { font-size:10.5px; text-transform:uppercase; letter-spacing:0.08em; color:var(--wa-dark); font-weight:600; margin-bottom:6px; }
+.preview-box .preview-text  { font-size:12.5px; color:var(--text-mid); line-height:1.6; white-space:pre-wrap; }
+.send-btn { width:100%; padding:14px; border-radius:10px; border:none; background:var(--wa); color:var(--white); font-family:'DM Sans',sans-serif; font-size:15px; font-weight:600; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:10px; transition:all 0.2s; }
+.send-btn:hover { background:#1fba59; transform:translateY(-1px); box-shadow:0 6px 20px rgba(37,211,102,0.35); }
+.send-btn svg { width:20px; height:20px; fill:var(--white); flex-shrink:0; }
+.privacy-note { text-align:center; font-size:11.5px; color:var(--text-muted); margin-top:12px; }
+
+/* ── CTA BAND ── */
+.cta-band { background: var(--green-deep); padding: 72px 5%; text-align: center; }
+.cta-band h2 { font-family:'Lora',serif; font-size:clamp(28px,4vw,44px); color:var(--white); font-weight:700; margin-bottom:16px; line-height:1.2; }
+.cta-band h2 em { font-style:italic; color:var(--gold-light); }
+.cta-band p { font-size:17px; color:rgba(255,255,255,0.6); margin-bottom:40px; }
+.cta-row { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+.btn-whatsapp { background:var(--wa); color:var(--white); border:none; padding:15px 28px; border-radius:var(--radius); font-family:'DM Sans',sans-serif; font-size:15px; font-weight:600; cursor:pointer; transition:all 0.2s; display:inline-flex; align-items:center; gap:8px; }
+.btn-whatsapp:hover { background:#1fba59; transform:translateY(-2px); }
+
+/* ── FOOTER ── */
+footer { background:#0d2018; padding:48px 5% 32px; display:flex; align-items:flex-start; justify-content:space-between; gap:40px; flex-wrap:wrap; }
+.footer-brand .fname2 { font-family:'Lora',serif; font-size:18px; color:var(--white); font-weight:700; margin-bottom:6px; }
+.footer-brand .ftagline { font-size:13px; color:rgba(255,255,255,0.4); line-height:1.6; max-width:280px; }
+.footer-col h4 { font-size:12px; text-transform:uppercase; letter-spacing:0.1em; color:rgba(255,255,255,0.35); margin-bottom:16px; }
+.footer-col ul { list-style:none; display:flex; flex-direction:column; gap:10px; }
+.footer-col ul a { font-size:13.5px; color:rgba(255,255,255,0.6); transition:color 0.2s; }
+.footer-col ul a:hover { color:var(--gold-light); }
+.footer-bottom { background:#0d2018; border-top:1px solid rgba(255,255,255,0.06); padding:18px 5%; text-align:center; }
+.footer-bottom p { font-size:12.5px; color:rgba(255,255,255,0.3); }
+
+/* ── FLOATING WHATSAPP BUBBLE ── */
+.wa-float-wrapper { position:fixed; bottom:28px; right:28px; z-index:999; display:flex; flex-direction:column; align-items:flex-end; gap:12px; }
+.wa-bubble { width:60px; height:60px; border-radius:50%; background:var(--wa); box-shadow:0 4px 20px rgba(37,211,102,0.45); display:flex; align-items:center; justify-content:center; cursor:pointer; border:none; transition:all 0.25s; position:relative; }
+.wa-bubble:hover { transform:scale(1.08); box-shadow:0 6px 28px rgba(37,211,102,0.55); }
+.wa-bubble svg { width:30px; height:30px; fill:var(--white); transition:opacity 0.2s; }
+.wa-bubble .close-x { position:absolute; font-size:22px; color:var(--white); display:none; line-height:1; }
+.wa-bubble.open svg { opacity:0; }
+.wa-bubble.open .close-x { display:block; }
+.wa-badge { position:absolute; top:-4px; right:-4px; width:18px; height:18px; background:#e53e3e; border-radius:50%; font-size:10px; font-weight:700; color:var(--white); display:flex; align-items:center; justify-content:center; border:2px solid var(--white); }
+.wa-tooltip { background:var(--green-deep); color:var(--white); padding:7px 14px; border-radius:8px; font-size:13px; font-weight:500; white-space:nowrap; box-shadow:var(--shadow); pointer-events:none; animation:fadeInUp 0.25s ease; }
+@keyframes fadeInUp { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
+.wa-popup { width:340px; background:var(--white); border-radius:var(--radius-lg); box-shadow:var(--shadow-lg); border:1px solid var(--border); overflow:hidden; display:none; animation:popUp 0.3s cubic-bezier(0.34,1.56,0.64,1); transform-origin:bottom right; }
+@keyframes popUp { from{opacity:0;transform:scale(0.85)} to{opacity:1;transform:scale(1)} }
+.wa-popup.open { display:block; }
+.wa-popup-header { background:var(--wa-dark); padding:16px 18px; display:flex; align-items:center; gap:12px; }
+.wa-popup-avatar { width:40px; height:40px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:20px; }
+.wa-popup-header .phname { font-size:14px; font-weight:600; color:var(--white); }
+.wa-popup-header .phsub  { font-size:12px; color:rgba(255,255,255,0.65); margin-top:2px; }
+.wa-popup-body { padding:16px; background:#e5ddd5; }
+.greeting-bubble { background:var(--white); border-radius:0 10px 10px 10px; padding:12px 14px; font-size:13px; color:var(--text); line-height:1.6; box-shadow:0 1px 2px rgba(0,0,0,0.08); margin-bottom:14px; max-width:90%; }
+.greeting-bubble .gtime { font-size:10px; color:var(--text-muted); margin-top:6px; display:block; text-align:right; }
+.wa-options { display:flex; flex-direction:column; gap:8px; }
+.wa-option { background:var(--white); border:1px solid rgba(18,140,126,0.2); border-radius:8px; padding:10px 14px; font-size:13px; font-weight:500; color:var(--wa-dark); cursor:pointer; transition:all 0.18s; text-align:left; display:flex; align-items:center; gap:10px; }
+.wa-option:hover { background:#f0faf7; border-color:var(--wa-dark); }
+.wa-option .opt-arrow { margin-left:auto; font-size:14px; color:rgba(18,140,126,0.5); }
+.wa-popup-footer { background:var(--white); padding:12px 16px; border-top:1px solid rgba(0,0,0,0.06); display:flex; align-items:center; gap:10px; }
+.wa-type-input { flex:1; background:#f0f2f5; border:none; border-radius:100px; padding:9px 16px; font-family:'DM Sans',sans-serif; font-size:13px; color:var(--text-muted); outline:none; }
+.wa-send-mini { width:36px; height:36px; background:var(--wa); border:none; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; transition:background 0.2s; flex-shrink:0; }
+.wa-send-mini:hover { background:#1fba59; }
+.wa-send-mini svg { width:16px; height:16px; fill:var(--white); }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+.hero-badge  { animation: fadeUp 0.6s ease 0.1s both; }
+.hero h1     { animation: fadeUp 0.7s ease 0.2s both; }
+.hero-desc   { animation: fadeUp 0.7s ease 0.32s both; }
+.hero-actions{ animation: fadeUp 0.7s ease 0.44s both; }
+.hero-card   { animation: fadeUp 0.8s ease 0.3s both; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 960px) {
+  .hero-content, .ai-inner, .about-inner, .contact-inner { grid-template-columns: 1fr; }
+  .hero-card, .ai-chat-demo { display: none; }
+  .services-grid, .shop-grid, .testimonial-grid { grid-template-columns: 1fr; }
+  .services-header, .shop-header { flex-direction: column; gap: 16px; }
+  nav .nav-links { display: none; }
+  .field-row { grid-template-columns: 1fr; }
+  .wa-popup { width: 300px; }
+  .creds-inner { justify-content: center; }
+  .cred-sep { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#home">
+    <div class="nav-logo-icon">🌿</div>
+    <div class="nav-logo-text">
+      <span class="name">Dr. Atmaram Pandurang Samant</span>
+      <span class="sub">Horticulture Consultant · Dapoli</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#ai-advisor">AI Advisor</a></li>
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="#contact">Book Consultation</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <div>
+      <div class="hero-badge">Dapoli · Konkan · Maharashtra</div>
+      <h1>Your Mango Orchard Deserves <em>Expert</em> Care</h1>
+      <p class="hero-desc">PhD-qualified horticulturist specialising in Alphonso, Kesar & Goa Mankurad management. Science-backed guidance for higher yields, healthier trees, and better market returns.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">📅 Book a Consultation</a>
+        <a href="#ai-advisor" class="btn-secondary">🤖 Ask AI Advisor</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-label">Research &amp; Expertise</div>
+      <div class="hero-stat-grid">
+        <div class="hero-stat"><span class="num">6+</span><div class="lab">Years Research</div></div>
+        <div class="hero-stat"><span class="num">6</span><div class="lab">NAAS Publications</div></div>
+        <div class="hero-stat"><span class="num">PhD</span><div class="lab">Fruit Science</div></div>
+        <div class="hero-stat"><span class="num">NET</span><div class="lab">ASRB Qualified</div></div>
+      </div>
+      <hr class="hero-divider"/>
+      <div class="hero-mini-chat">
+        <div class="chat-label">AI Farm Advisor Preview</div>
+        <div class="chat-bubble-user">माझ्या आंब्याचे मोहर का येत नाही? 🌼</div>
+        <div class="chat-bubble-ai">🌿 Flowering failure in Alphonso can have several causes — potassium deficiency, incorrect pruning timing, or excess nitrogen. Based on Konkan conditions, here's what to check first…</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS STRIP -->
+<div class="creds">
+  <div class="creds-inner">
+    <div class="cred-item"><div class="cred-icon">🎓</div><div class="cred-text"><div class="cred-main">PhD · Fruit Science</div><div class="cred-sub">DBSKKV Dapoli, 2026</div></div></div>
+    <div class="cred-sep"></div>
+    <div class="cred-item"><div class="cred-icon">📋</div><div class="cred-text"><div class="cred-main">ASRB-NET Qualified</div><div class="cred-sub">National eligibility</div></div></div>
+    <div class="cred-sep"></div>
+    <div class="cred-item"><div class="cred-icon">📄</div><div class="cred-text"><div class="cred-main">6 NAAS Publications</div><div class="cred-sub">International journals</div></div></div>
+    <div class="cred-sep"></div>
+    <div class="cred-item"><div class="cred-icon">🏆</div><div class="cred-text"><div class="cred-main">Young Horticulturist Award</div><div class="cred-sub">Int'l Conference, Hyderabad 2023</div></div></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-section" id="services">
+  <div class="section-inner">
+    <div class="services-header">
+      <div>
+        <div class="section-label">Consultancy Services</div>
+        <h2 class="section-title">Expert advice for every stage<br/>of your <em>orchard's journey</em></h2>
+      </div>
+      <p class="section-desc" style="text-align:right;max-width:360px;">All consultations are conducted by Dr. Atmaram personally — no junior staff, no generic advice.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-icon">🌳</span>
+        <h3>Mango Orchard Audit</h3>
+        <p>Complete assessment of your orchard's health — soil analysis interpretation, canopy management, pest pressure, irrigation, and a written action plan. <em style="font-size:12.5px;color:var(--text-muted);">*Travelling & staying charges extra.</em></p>
+        <div class="service-price">
+          <div class="price-tag">₹1,500 <span>/ visit*</span></div>
+          <a href="#contact" class="service-book-btn">Book Now →</a>
+        </div>
+      </div>
+      <div class="service-card featured">
+        <div class="featured-badge">Most Popular</div>
+        <span class="service-icon">💧</span>
+        <h3>Fertigation Schedule Design</h3>
+        <p>Custom nutrient management plan tailored to your variety, soil type, and growth stage. Includes month-wise NPK schedule and micronutrient timing.</p>
+        <div class="service-price">
+          <div class="price-tag">₹2,000 <span>/ plan</span></div>
+          <a href="#contact" class="service-book-btn">Book Now →</a>
+        </div>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🌸</span>
+        <h3>Crop Regulation & Flowering</h3>
+        <p>Flowering management — paclobutrazol timing, mepiquat chloride application, irrigation stress protocols, and pre-bloom spray schedules for Konkan.</p>
+        <div class="service-price">
+          <div class="price-tag">₹3,000 <span>/ season</span></div>
+          <a href="#contact" class="service-book-btn">Book Now →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI ADVISOR -->
+<section class="ai-section" id="ai-advisor">
+  <div class="ai-inner" style="padding:0 5%;">
+    <div class="ai-left">
+      <div class="section-label">AI Farm Advisor</div>
+      <h2 class="section-title">Instant answers to your <em style="color:var(--gold-light)">orchard questions</em></h2>
+      <p class="section-desc">Powered by advanced AI trained on horticultural science, Dr. Atmaram's research, and Konkan-region growing conditions. Available 24/7 in Marathi and English.</p>
+      <ul class="ai-features">
+        <li>Disease &amp; pest identification from symptom description</li>
+        <li>Varietal identification — Alphonso vs Kesar vs Mankurad</li>
+        <li>Month-wise orchard care calendar for Konkan</li>
+        <li>Fertiliser dosage and timing queries</li>
+        <li>Flowering &amp; fruiting problem diagnosis</li>
+      </ul>
+      <a href="#contact" class="btn-primary">Try via WhatsApp →</a>
+    </div>
+    <div class="ai-chat-demo">
+      <div class="ai-chat-header">
+        <div class="ai-avatar">🌿</div>
+        <div>
+          <div class="hname">Dr. Atmaram's AI Advisor</div>
+          <div class="hstatus"><span class="online-dot"></span>Online now</div>
+        </div>
+      </div>
+      <div class="chat-msgs">
+        <div class="msg user"><div class="msg-sender">You</div>My Alphonso trees show black spots on leaves. Is it anthracnose?</div>
+        <div class="msg ai"><div class="msg-sender">AI Advisor</div>Black spots on Alphonso during pre-monsoon are often <strong>anthracnose</strong> (Colletotrichum gloeosporioides). Recommended: Copper oxychloride 0.3% + Mancozeb 0.25% spray. Repeat in 15 days.</div>
+        <div class="msg user"><div class="msg-sender">You</div>What humidity triggers powdery mildew in Konkan?</div>
+        <div class="msg ai"><div class="msg-sender">AI Advisor</div>Risk rises when RH stays above 70% with 22–28°C — typically Feb–March. Preventive Sulphur dust (30 kg/ha) at panicle emergence is the standard protocol.</div>
+      </div>
+      <div class="chat-input-row">
+        <div class="chat-input-fake">Ask about your orchard…</div>
+        <button class="chat-send-btn">↑</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section class="shop-section" id="shop">
+  <div class="section-inner">
+    <div class="shop-header">
+      <div>
+        <div class="section-label">Digital Resource Shop</div>
+        <h2 class="section-title">Research-backed guides<br/>you can use <em>immediately</em></h2>
+      </div>
+      <a href="#contact" class="btn-outline">View all →</a>
+    </div>
+    <div class="shop-grid">
+      <div class="shop-card">
+        <div class="shop-thumb shop-thumb-mango">🥭</div>
+        <div class="shop-card-body">
+          <div class="shop-type">PDF Guide · 48 pages</div>
+          <h3>Alphonso Mango: Complete Orchard Management Guide</h3>
+          <p>From planting to harvest — fertigation, pest management, and yield optimisation for Konkan conditions.</p>
+          <div class="shop-footer"><div class="shop-price">₹299</div><a href="#contact" class="shop-buy-btn">Buy via WhatsApp</a></div>
+        </div>
+      </div>
+      <div class="shop-card">
+        <div class="shop-thumb shop-thumb-fertigation">💧</div>
+        <div class="shop-card-body">
+          <div class="shop-type">Excel Template + PDF</div>
+          <h3>Mango Fertigation Planner — Season-wise NPK Calculator</h3>
+          <p>Fill in your tree count and variety. Auto-generates a 12-month fertigation schedule with dosage and timing.</p>
+          <div class="shop-footer"><div class="shop-price">₹199</div><a href="#contact" class="shop-buy-btn">Buy via WhatsApp</a></div>
+        </div>
+      </div>
+      <div class="shop-card">
+        <div class="shop-thumb shop-thumb-calendar">📅</div>
+        <div class="shop-card-body">
+          <div class="shop-type">Printable Calendar · A3</div>
+          <h3>Konkan Mango Orchard Seasonal Calendar 2025–26</h3>
+          <p>Month-by-month operations — pruning, spraying, irrigation, harvesting — calibrated to Konkan rainfall patterns.</p>
+          <div class="shop-footer"><div class="shop-price">₹199</div><a href="#contact" class="shop-buy-btn">Buy via WhatsApp</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-inner" style="max-width:1200px;margin:0 auto;padding:0 5%;">
+    <div class="about-photo" style="padding:0;border:none;background:none;">
+      <img src="photo.jpeg" alt="Dr. Atmaram Pandurang Samant — Horticulture Consultant" style="width:100%;height:400px;object-fit:cover;object-position:top center;border-radius:var(--radius-lg);display:block;"/>
+      <div style="background:var(--green-deep);border-radius:10px;padding:14px 16px;text-align:center;margin-top:14px;">
+        <div style="font-size:12px;color:var(--gold-light);font-weight:600;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;">🏆 Young Horticulturist Award</div>
+        <div style="font-family:'Lora',serif;font-size:15px;color:#fff;font-weight:600;">International Conference, Hyderabad 2023</div>
+      </div>
+    </div>
+    <div>
+      <div class="section-label">About Dr. Atmaram</div>
+      <h2 class="section-title">Six years of research<br/>in your <em>service</em></h2>
+      <p class="about-bio">I'm Dr. Atmaram Pandurang Samant, a horticulturist with a PhD in Fruit Science from Dr. Balasaheb Sawant Konkan Krishi Vidyapeeth, Dapoli. My research has focused on mango orchard management, crop regulation, flowering physiology, fertigation optimisation, and varietal characterisation — with six publications in NAAS-rated international journals.</p>
+      <p class="about-bio">I also manage my own mixed plantation of Alphonso, Kesar, and Pairi mango alongside coconut, bamboo, and cashew — so my advice is grounded in both research and real farm management in Konkan conditions.</p>
+      <div class="about-pills">
+        <span class="pill green">Mango Orchard Management</span>
+        <span class="pill green">Flowering Physiology</span>
+        <span class="pill green">Fertigation</span>
+        <span class="pill green">DUS Varietal Identification</span>
+        <span class="pill">Crop Regulation</span>
+        <span class="pill">Jackfruit Value Addition</span>
+        <span class="pill">PPV&amp;FRA Research</span>
+      </div>
+      <div class="about-cta">
+        <a href="#contact" class="btn-primary">Work with Me</a>
+        <a href="cv.html" target="_blank" class="btn-outline" id="cv-link">Download CV (PDF)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonial-section" id="testimonials">
+  <div class="section-inner">
+    <div class="testi-header">
+      <div class="section-label" style="text-align:center;">What farmers say</div>
+      <h2 class="section-title" style="text-align:center;">Trusted by Konkan growers</h2>
+    </div>
+    <div class="testimonial-grid" style="grid-template-columns:repeat(2,1fr);">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Avdhut Sir's guidance on pruning, irrigation, and Bordeaux application has significantly improved my mango orchard. His practical advice suits our laterite soil conditions perfectly. Regular follow-ups and clear instructions made implementation easy. I've seen uniform growth and better plant health. Highly reliable consultancy for Konkan mango farmers."</p>
+        <div class="testi-author"><div class="testi-avatar">AP</div><div><div class="testi-name">Mr. Atul Phatak</div><div class="testi-loc">Mango farmer · Chikhalgaon, Dapoli</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I approached Avdhut for complete farm planning, and his approach was highly professional. From crop selection to cost estimation and long-term strategy, everything was well thought out. He understands both agriculture and project execution. His consultancy is ideal for anyone looking to develop a systematic, diversified farm in Konkan."</p>
+        <div class="testi-author"><div class="testi-avatar">HP</div><div><div class="testi-name">Dr. Hrushikesh Pai</div><div class="testi-loc">Farm developer · Tetawali, Dapoli</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Avdhut Sir explains every concept in a very simple and practical way. From irrigation scheduling to organic inputs and intercrops, his guidance has helped me manage my mango orchard confidently. He is very supportive and always available for queries. Perfect mentor for farmers who want to learn and improve."</p>
+        <div class="testi-author"><div class="testi-avatar">SS</div><div><div class="testi-name">Mrs. Swati Shinde</div><div class="testi-loc">Mango farmer · Vetore, Vengurla</div></div></div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Avdhut provided clear planning for my mango plantation with proper spacing, variety selection, and cost estimation. His calculations and practical approach made decision-making easy. He also handled plant sourcing and initial setup efficiently. Good consultancy for those starting a structured mango orchard with clarity and precision."</p>
+        <div class="testi-author"><div class="testi-avatar">SP</div><div><div class="testi-name">Mr. Sandeep Prabhu</div><div class="testi-loc">Mango grower · Mandangad</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div>
+      <div class="section-label">Get in Touch</div>
+      <h2 class="section-title">Talk to an expert,<br/><em>not a chatbot</em></h2>
+      <p class="section-desc" style="margin-bottom:36px;">Whether you have a quick question about your orchard or need a full consultation, reach out via WhatsApp. Most queries get a response within 2 hours.</p>
+      <div class="contact-cards">
+        <a class="contact-card" id="wa-direct" href="#" onclick="openWA(''); return false;">
+          <div class="contact-card-icon icon-wa">💬</div>
+          <div class="contact-card-text"><div class="clabel">WhatsApp — fastest response</div><div class="csub">Usually replies within 2 hours</div></div>
+          <div class="contact-card-arrow">›</div>
+        </a>
+        <a class="contact-card" href="https://calendly.com/samant-avdhut" target="_blank">
+          <div class="contact-card-icon icon-cal">📅</div>
+          <div class="contact-card-text"><div class="clabel">Book a video consultation</div><div class="csub">Pick a slot · 45-min session · Calendly</div></div>
+          <div class="contact-card-arrow">›</div>
+        </a>
+        <a class="contact-card" href="mailto:samant.avdhut@gmail.com">
+          <div class="contact-card-icon icon-mail">✉️</div>
+          <div class="contact-card-text"><div class="clabel">Email for detailed queries</div><div class="csub">Reply within 24 hours</div></div>
+          <div class="contact-card-arrow">›</div>
+        </a>
+      </div>
+      <div class="response-note">
+        <div class="response-dot"></div>
+        <span>Dr. Atmaram is currently accepting new consultations for Kharif 2026</span>
+      </div>
+    </div>
+
+    <div class="query-form-card">
+      <div class="form-header">
+        <div class="form-header-avatar">🌿</div>
+        <div class="form-header-text">
+          <div class="fname">Send a WhatsApp Message</div>
+          <div class="fstatus"><span class="online-dot"></span>Dr. Atmaram · Dapoli, Konkan</div>
+        </div>
+      </div>
+      <div class="form-body">
+        <span class="form-flabel">What do you need help with?</span>
+        <div class="query-chips">
+          <div class="chip active" data-type="orchard"     onclick="selectChip(this)">🌳 Orchard advice</div>
+          <div class="chip"        data-type="disease"     onclick="selectChip(this)">🍂 Disease / pest</div>
+          <div class="chip"        data-type="booking"     onclick="selectChip(this)">📅 Book consultation</div>
+          <div class="chip"        data-type="fertigation" onclick="selectChip(this)">💧 Fertigation</div>
+          <div class="chip"        data-type="variety"     onclick="selectChip(this)">🥭 Variety ID</div>
+          <div class="chip"        data-type="shop"        onclick="selectChip(this)">🛒 Shop / guides</div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label>Your name</label><input type="text" id="fname-f" placeholder="e.g. Ramesh Sawant" oninput="updatePreview()"/></div>
+          <div class="field"><label>Village / Taluka</label><input type="text" id="floc-f" placeholder="e.g. Ratnagiri" oninput="updatePreview()"/></div>
+        </div>
+        <div class="field"><label>Your message</label><textarea id="fmsg-f" placeholder="Describe your query…" oninput="updatePreview()"></textarea></div>
+        <div class="preview-box">
+          <div class="preview-label">📱 WhatsApp message preview</div>
+          <div class="preview-text" id="preview-text">Select a query type above…</div>
+        </div>
+        <button class="send-btn" onclick="sendToWhatsApp()">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Open WhatsApp to Send
+        </button>
+        <p class="privacy-note">🔒 Opens WhatsApp on your phone · No data stored on this site</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <h2>Ready to transform your <em>orchard's potential</em>?</h2>
+  <p>One conversation with an expert can save a full season of guesswork.</p>
+  <div class="cta-row">
+    <a class="btn-whatsapp" href="#" onclick="openWA(''); return false;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      WhatsApp me directly
+    </a>
+    <a href="#contact" class="btn-primary">📅 Book a Consultation</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">
+    <div class="fname2">Dr. Atmaram Pandurang Samant</div>
+    <p class="ftagline">PhD Horticulturist · Mango & Fruit Orchard Specialist<br/>Vengurla, Sindhudurg · Dapoli, Maharashtra</p>
+  </div>
+  <div class="footer-col"><h4>Services</h4><ul><li><a href="#services">Orchard Audit</a></li><li><a href="#services">Fertigation Planning</a></li><li><a href="#services">Crop Regulation</a></li><li><a href="#ai-advisor">AI Farm Advisor</a></li></ul></div>
+  <div class="footer-col"><h4>Resources</h4><ul><li><a href="#shop">Digital Shop</a></li><li><a href="cv.html" target="_blank" id="cv-link2">Download CV</a></li><li><a href="#about">Publications</a></li></ul></div>
+  <div class="footer-col"><h4>Contact</h4><ul><li><a href="#" onclick="openWA(''); return false;">WhatsApp</a></li><li><a href="mailto:samant.avdhut@gmail.com">Email</a></li><li><a href="https://calendly.com/samant-avdhut" target="_blank">Book via Calendly</a></li></ul></div>
+</footer>
+<div class="footer-bottom"><p>© 2026 Dr. Atmaram Pandurang Samant · All rights reserved · Dapoli, Maharashtra</p></div>
+
+<!-- FLOATING WHATSAPP BUBBLE -->
+<div class="wa-float-wrapper">
+  <div class="wa-tooltip" id="wa-tooltip" style="display:none;">Chat with Dr. Atmaram 🌿</div>
+  <div class="wa-popup" id="wa-popup">
+    <div class="wa-popup-header">
+      <div class="wa-popup-avatar">🌿</div>
+      <div>
+        <div class="phname">Dr. Atmaram Pandurang Samant</div>
+        <div class="phsub"><span style="display:inline-block;width:6px;height:6px;background:#4ade80;border-radius:50%;margin-right:4px;vertical-align:middle;"></span>Online · Horticulture Consultant</div>
+      </div>
+    </div>
+    <div class="wa-popup-body">
+      <div class="greeting-bubble">🙏 Namaste! I'm Dr. Atmaram, PhD Horticulturist from Dapoli.<br/><br/>How can I help your orchard today?<span class="gtime">now</span></div>
+      <div class="wa-options">
+        <button class="wa-option" onclick="quickSend('orchard')"><span>🌳</span><span style="flex:1">Mango orchard advice</span><span class="opt-arrow">›</span></button>
+        <button class="wa-option" onclick="quickSend('disease')"><span>🍂</span><span style="flex:1">Disease or pest problem</span><span class="opt-arrow">›</span></button>
+        <button class="wa-option" onclick="quickSend('booking')"><span>📅</span><span style="flex:1">Book a consultation</span><span class="opt-arrow">›</span></button>
+        <button class="wa-option" onclick="quickSend('fertigation')"><span>💧</span><span style="flex:1">Fertigation query</span><span class="opt-arrow">›</span></button>
+      </div>
+    </div>
+    <div class="wa-popup-footer">
+      <input class="wa-type-input" id="wa-custom-msg" placeholder="Type a message…" onkeydown="if(event.key==='Enter')customSend()"/>
+      <button class="wa-send-mini" onclick="customSend()"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></button>
+    </div>
+  </div>
+  <button class="wa-bubble" id="wa-bubble" onclick="togglePopup()" onmouseenter="showTip()" onmouseleave="hideTip()" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="close-x">✕</span>
+    <div class="wa-badge">1</div>
+  </button>
+</div>
+
+<script>
+  /* ══════════════════════════════════════
+     ⚙️  EDIT THESE 3 LINES ONLY
+     ══════════════════════════════════════ */
+  const WA_NUMBER  = '919172633676';        // Your WhatsApp number with country code
+  const CALENDLY   = 'samantavdhut';       // Your Calendly username
+  const YOUR_EMAIL = 'samant.avdhut@gmail.com';// Your email address
+  /* ══════════════════════════════════════ */
+
+  const TEMPLATES = {
+    orchard:     (n,l,m) => `🌳 *Mango Orchard Query*\n\nHello Dr. Atmaram,\n\nMy name is ${n||'[Name]'}${l?', from '+l:''}.\n\n${m||'I have a question about my mango orchard and would like your expert guidance.'}\n\nKindly advise. Thank you 🙏`,
+    disease:     (n,l,m) => `🍂 *Disease / Pest Problem*\n\nHello Dr. Atmaram,\n\nMy name is ${n||'[Name]'}${l?', from '+l:''}.\n\nSymptoms observed:\n${m||'[Describe symptoms — which part of tree, colour, spread]'}\n\nPlease help identify and treat this. Thank you 🙏`,
+    booking:     (n,l,m) => `📅 *Consultation Booking Request*\n\nHello Dr. Atmaram,\n\nMy name is ${n||'[Name]'}${l?', from '+l:''}.\n\nI would like to book a consultation.\n\n${m||'Please share your available slots and consultation fee.'}\n\nThank you 🙏`,
+    fertigation: (n,l,m) => `💧 *Fertigation Query*\n\nHello Dr. Atmaram,\n\nMy name is ${n||'[Name]'}${l?', from '+l:''}.\n\n${m||'I need guidance on fertigation / nutrient management. [Variety, tree age, soil type]'}\n\nRequest your expert advice. Thank you 🙏`,
+    variety:     (n,l,m) => `🥭 *Mango Variety Identification*\n\nHello Dr. Atmaram,\n\nMy name is ${n||'[Name]'}${l?', from '+l:''}.\n\n${m||'I need help identifying the variety of my mango trees. [Describe leaf, colour, tree habit]'}\n\nI can also share photos. Thank you 🙏`,
+    shop:        (n,l,m) => `🛒 *Shop / Digital Guide Query*\n\nHello Dr. Atmaram,\n\nMy name is ${n||'[Name]'}${l?', from '+l:''}.\n\n${m||'I am interested in purchasing one of your digital guides. Please share payment details.'}\n\nThank you 🙏`,
+  };
+
+  let currentType = 'orchard';
+  let popupOpen   = false;
+
+  function openWA(msg) { window.open(`https://wa.me/${WA_NUMBER}${msg?'?text='+encodeURIComponent(msg):''}`, '_blank'); }
+  function selectChip(el) { document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active')); el.classList.add('active'); currentType = el.dataset.type; updatePreview(); }
+  function updatePreview() {
+    const n = document.getElementById('fname-f').value.trim();
+    const l = document.getElementById('floc-f').value.trim();
+    const m = document.getElementById('fmsg-f').value.trim();
+    document.getElementById('preview-text').textContent = TEMPLATES[currentType](n,l,m);
+  }
+  function sendToWhatsApp() {
+    const n = document.getElementById('fname-f').value.trim();
+    const l = document.getElementById('floc-f').value.trim();
+    const m = document.getElementById('fmsg-f').value.trim();
+    openWA(TEMPLATES[currentType](n,l,m));
+  }
+  function quickSend(type) { openWA(TEMPLATES[type]('','','')); }
+  function customSend() { const i=document.getElementById('wa-custom-msg'); if(i.value.trim()){openWA('🌿 '+i.value.trim()); i.value='';} }
+  function togglePopup() {
+    popupOpen=!popupOpen;
+    document.getElementById('wa-popup').classList.toggle('open',popupOpen);
+    const b=document.getElementById('wa-bubble'); b.classList.toggle('open',popupOpen);
+    if(popupOpen){b.querySelector('.wa-badge').style.display='none'; hideTip();}
+  }
+  function showTip(){if(!popupOpen)document.getElementById('wa-tooltip').style.display='block';}
+  function hideTip(){document.getElementById('wa-tooltip').style.display='none';}
+  document.addEventListener('click',e=>{if(popupOpen&&!document.querySelector('.wa-float-wrapper').contains(e.target)){popupOpen=false;document.getElementById('wa-popup').classList.remove('open');document.getElementById('wa-bubble').classList.remove('open');}});
+
+  updatePreview();
+</script>
+</body>
+</html>
